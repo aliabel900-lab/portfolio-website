@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+                <li><a href="#skills" onclick="scrollToSection('skills')">Skills</a></li>
+                <li><a href="#projects" onclick="scrollToSection('projects')">Projects</a></li>
+                <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, Welcome to my website</h1>
+                <h1> I'm a Full Stack Developer</h1>
+                <p>Building amazing web experiences with modern technologies and helping businesses grow.</p>
+                <button class="cta-button" onclick="scrollToSection('contact')">Get In Touch</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Profile">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                
+                <strong style="font-size: 1.2rem; color: var(--accent-color);">
+                    I'm a passionate full stack developer with an experience for building web applications.
+                    I specialize in creating responsive, user-friendly interfaces combined with robust backend solutions.
+                </strong>
+                <strong style="font-size: 1.2rem; color: black;"><br><br>
+                    My journey in web development has taken me through various challenges and exciting projects, 
+                    where I've learned to solve complex problems and deliver high-quality code.
+                </strong>
+                <strong style="font-size: 1.2rem; color: purple;"><br><br>
+                    When I'm not coding, you can find me exploring new technologies, contributing to open source, 
+                    or sharing knowledge with the developer community.
+                </strong>
+            </div>
+            <div>
+                <img src="images/profile.jpg" alt="profile" style="width: 90%; border-radius: 50%;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>✓ React.js / Vue.js</li>
+                    <li>✓ HTML5 & CSS3</li>
+                    <li>✓ JavaScript / TypeScript</li>
+                    <li>✓ Responsive Design</li>
+                    <li>✓ Tailwind CSS</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Backend</h3>
+                <ul>
+                    <li>✓ Node.js / Express</li>
+                    <li>✓ PHP / Laravel</li>
+                    <li>✓ REST APIs</li>
+                    <li>✓ Database Design</li>
+                    <li>✓ Authentication</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Databases</h3>
+                <ul>
+                    <li>✓ MariaDB</li>
+                    <li>✓ PostgreSQL</li>
+                    <li>✓ MySQL</li>
+                    <li>✓ Firebase</li>
+                    <li>✓ Redis</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Tools & Platforms</h3>
+                <ul>
+                    <li>✓ Git & GitHub</li>
+                    <li>✓ Docker</li>
+                    <li>✓ AWS / Heroku</li>
+                    <li>✓ Webpack</li>
+                    <li>✓ CI/CD Pipelines</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">💻</div>
+                <div class="project-content">
+                    <h3>E-Commerce Platform</h3>
+                    <img src="images/digital.jpg" alt="E-Commerce Platform">
+                    <strong style="font-size: 1.2rem; color: black;">Featured e-commerce application with payment integration, inventory management, and admin dashboard.</strong>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MariaDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🎯</div>
+                <div class="project-content">
+                    <h3>Restaurant website</h3>
+                    <img src="images/restaurant.jpg" alt="Restaurant website">
+                    <strong style="font-size: 1.2rem; color: black;"> Modern, responsive website for a local restaurant with online ordering and reservation features.</strong>
+                    <div class="project-tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Tailwind</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">📊</div>
+                <div class="project-content">
+                    <h3>Car rental system</h3>
+                    <img src="images/auto car.jpg" alt="Car rental system">
+                    <strong style="font-size: 1.1rem; color: black;"> Comprehensive car rental management system with booking, pricing, and reporting features.</strong>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">D3.js</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🔐</div>
+                <div class="project-content">
+                    <h3>Social Media API</h3>
+                    <strong style="font-size: 1.2rem; color: black;">Robust REST API for a social networking platform with user authentication, messaging, and feed algorithms.</strong>
+                    <div class="project-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">JWT</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🎨</div>
+                <div class="project-content">
+                    <h3>Design System</h3>
+                    <strong style="font-size: 1.2rem; color: black;">Comprehensive component library and design system documentation for consistent UI across applications.</strong>
+                    <div class="project-tags">
+                        <span class="tag">Storybook</span>
+                        <span class="tag">React</span>
+                        <span class="tag">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🚀</div>
+                <div class="project-content">
+                    <h3>Blog Engine</h3>
+                    <strong style="font-size: 1.2rem; color: black;">Serverless blogging platform with markdown support, SEO optimization, and content management system.</strong>
+                    <div class="project-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Markdown</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <strong style="font-size: 1.2rem; color: black;">I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</strong>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <h1>Contact Me</h1>
+                    <strong><label for="phone">Phone number 0706332477</label></strong><br>
+                    <strong style="font-size: 1.2rem; color: #243888;">aliabel900@gmail.com</strong>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Connect With Me</h3>
+        <div class="social-links">
+            <a href="https://github.com" title="GitHub" target="_blank"><i class="fab fa-github"></i><span>GitHub</span></a>
+            <a href="https://linkedin.com" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+            <a href="https://twitter.com" title="Twitter" target="_blank"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+            <a href="mailto:email@example.com" title="Email"><i class="fas fa-envelope"></i><span>Email</span></a>
+        </div>
+        <strong>&copy; 2026 Full Stack Developer. All rights reserved.</strong>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

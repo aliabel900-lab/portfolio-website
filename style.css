@@ -132,7 +132,7 @@ nav {
     width: 100%;
     max-width: 380px;
     border-radius: 100%;
-    padding: 10;
+    padding: 10px;
     background: linear-gradient(135deg, #1f2a30, #7c3aed);
     box-shadow: 0 20px 60px rgba(0,0,0,0.3);
     transition: all 0.4s ease;

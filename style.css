@@ -25,7 +25,7 @@ body {
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
-    background: linear-gradient(180deg, purple, #4ef4f4);
+    background: white;
     scroll-behavior: smooth;
 }
 
